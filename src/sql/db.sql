@@ -1,4 +1,5 @@
 create database mini_dish_db;
-create user mini_dish_db_manager;
+create user mini_dish_db_manager with password null;
 grant connect on database mini_dish_db to mini_dish_db_manager;
-grant create, update, delete, insert, select on all table to mini_dish_db_manager;
+grant update, delete, insert, select on all tables in schema public to mini_dish_db_manager;
+grant create on schema public to mini_dish_db_manager;
