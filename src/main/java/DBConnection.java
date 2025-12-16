@@ -18,5 +18,21 @@ public class DBConnection {
         }
     }
 
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+
+                if (!connection.isClosed()) {
+                    connection.close();
+                    System.out.println("Connexion JDBC fermée avec succès.");
+                } else {
+                    System.out.println("La connexion JDBC était déjà fermée.");
+                }
+            } catch (SQLException e) {
+                System.err.println("Erreur lors de la fermeture de la connexion JDBC : " + e.getMessage());
+            }
+        }
+    }
+
 
 }
