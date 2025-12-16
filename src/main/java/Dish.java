@@ -18,4 +18,8 @@ public class Dish {
     public Double getDishPrice() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    public String getName() {
+        return name;
+    }
 }

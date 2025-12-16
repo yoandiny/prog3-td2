@@ -14,6 +14,6 @@ public class Ingredient {
     }
 
     public String getDishName(){
-        throw new UnsupportedOperationException("Not supported yet.");
+        return dish.getName();
     }
 }
