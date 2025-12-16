@@ -16,4 +16,8 @@ public class Ingredient {
     public String getDishName(){
         return dish.getName();
     }
+
+    public double getPrice() {
+        return price;
+    }
 }

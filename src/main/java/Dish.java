@@ -16,7 +16,12 @@ public class Dish {
     }
 
     public Double getDishPrice() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        double price = 0.0;
+        for (Ingredient ingredient : ingredients) {
+            double ingedientPrice = ingredient.getPrice();
+            price += ingedientPrice;
+        }
+        return price;
     }
 
     public String getName() {
