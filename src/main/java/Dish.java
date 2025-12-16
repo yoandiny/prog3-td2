@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Dish {
     private int id;
     private String name;
